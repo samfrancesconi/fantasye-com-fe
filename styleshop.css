@@ -1,0 +1,37 @@
+
+img {
+    width: 100px;
+    height: 140px;
+}
+
+.product {
+    display: inline-block;
+    margin: 30px;
+    font-size: 20px;
+}
+
+
+
+body {
+    text-align: center;
+    color: aquamarine;
+    font-family: fantasy;
+    background-image: url("images/officina.jpg");
+}
+
+.outcome {
+    position: absolute;
+    top: 430px;
+}
+
+.totale {
+    position: relative;
+}
+
+h1 {
+font-size: 60px;
+}
+
+h3 {
+font-size: 20px;
+}

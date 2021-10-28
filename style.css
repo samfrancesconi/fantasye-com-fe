@@ -1,0 +1,42 @@
+body {
+background-image: url("images/sfondo.jpeg");
+background-size: 1300px;
+background-position:inherit;
+}
+
+.titolo {
+
+position: absolute;   
+font-family: fantasy;
+font-size: 120px;
+color: rgb(43, 137, 180);
+right: 350px;
+top: 150px;
+
+}
+
+.sotto {
+
+position: absolute;  
+right: 500px;
+top: 350px; 
+font-family: fantasy;
+font-size: 50px;
+color:rgb(43, 137, 180)
+
+}
+
+a {
+ 
+font-family: fantasy;   
+font-size:70px;   
+color: seagreen;
+position:absolute;
+top: 550px;
+right: 600px;
+ 
+}
+
+.listel {
+ font-family: fantasy;   
+}
