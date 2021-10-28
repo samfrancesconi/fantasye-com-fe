@@ -7,30 +7,30 @@ class Weapon {
 
 class Cart {
   constructor(counter) {
-    this.prices = [];
-    this.names = [];
-    this.counter = counter;
+      this.prices = [];
+      this.names = [];
+      this.counter = counter;
   };
 
   addToCart(weapon) {
-    this.prices.push(weapon.price);
-    this.names.push(weapon.name);
+      this.prices.push(weapon.price);
+      this.names.push(weapon.name);
   };
 
   remove() {
-    this.prices.pop();
-    this.names.pop();
+      this.prices.pop();
+      this.names.pop();
   }
 
   releaseLast() {
-    this.prices.pop();
+     this.prices.pop();
   }
 
   getSum() {
     let sum = 0;
     for (let i = 0; i < this.prices.length; i++) {
-      sum = sum + this.prices[i];
-      this.counter = sum
+        sum = sum + this.prices[i];
+        this.counter = sum
     }
 
     if (this.counter < 2000) {
@@ -54,27 +54,27 @@ const buttonRelease = document.getElementById("remove");
 
 
 function addWeapon(weapon) {
-  mainCart.addToCart(weapon);
-  mainCart.getSum();
+    mainCart.addToCart(weapon);
+    mainCart.getSum();
 };
 
 function removeWeapon() {
-  mainCart.remove();
-  mainCart.getSum();
+    mainCart.remove();
+    mainCart.getSum();
 
-  console.log(mainCart)
+    console.log(mainCart)
 };
 
 
 buttonSword.addEventListener('click', () => {
-  addWeapon(sword);
-  var snd = new Audio("suoni/sword.wav");
-  snd.play();
-  let element = document.createElement("li");
-  element.innerHTML = "You purchased 1 Twin Lance";
-  list.appendChild(element);
-  price.innerHTML = "Total purchase is " + mainCart.counter + " Guil";
-  console.log(mainCart)
+    addWeapon(sword);
+    var snd = new Audio("suoni/sword.wav");
+    snd.play();
+    let element = document.createElement("li");
+    element.innerHTML = "You purchased 1 Twin Lance";
+    list.appendChild(element);
+    price.innerHTML = "Total purchase is " + mainCart.counter + " Guil";
+    console.log(mainCart)
 });
 
 buttonGun.addEventListener('click', () => {
